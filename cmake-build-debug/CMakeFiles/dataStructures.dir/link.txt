@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/dataStructures.dir/main.cpp.o CMakeFiles/dataStructures.dir/Node.cpp.o  -o dataStructures 
