@@ -5,7 +5,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jcfavaro/Documents/miGithub/dataStructures/Node.cpp" "/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles/dataStructures.dir/Node.cpp.o"
-  "/home/jcfavaro/Documents/miGithub/dataStructures/main.cpp" "/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles/dataStructures.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

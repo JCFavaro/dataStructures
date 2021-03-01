@@ -3,6 +3,5 @@ project(dataStructures)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(dataStructures Node.h Node.cpp)
+add_executable(Lists SimpleList.cpp)
 
-add_subdirectory(Lists)

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dataStructures.dir/Node.cpp.o"
-  "CMakeFiles/dataStructures.dir/main.cpp.o"
   "dataStructures"
   "dataStructures.pdb"
 )

@@ -143,6 +143,19 @@ dataStructures/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataStructures.dir/build.make CMakeFiles/dataStructures.dir/build
 .PHONY : dataStructures/fast
 
+#=============================================================================
+# Target rules for targets named Lists
+
+# Build rule for target.
+Lists: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Lists
+.PHONY : Lists
+
+# fast build rule for target.
+Lists/fast:
+	$(MAKE) $(MAKESILENT) -f Lists/CMakeFiles/Lists.dir/build.make Lists/CMakeFiles/Lists.dir/build
+.PHONY : Lists/fast
+
 Node.o: Node.cpp.o
 
 .PHONY : Node.o
@@ -170,33 +183,6 @@ Node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataStructures.dir/build.make CMakeFiles/dataStructures.dir/Node.cpp.s
 .PHONY : Node.cpp.s
 
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataStructures.dir/build.make CMakeFiles/dataStructures.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataStructures.dir/build.make CMakeFiles/dataStructures.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataStructures.dir/build.make CMakeFiles/dataStructures.dir/main.cpp.s
-.PHONY : main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -205,13 +191,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Lists"
 	@echo "... dataStructures"
 	@echo "... Node.o"
 	@echo "... Node.i"
 	@echo "... Node.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 .PHONY : help
 
 

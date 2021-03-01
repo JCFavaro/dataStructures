@@ -2,12 +2,12 @@
 
 template <class T>
 void Node<T>::setData(T value) {
-    this->data = value;
+   data = value;
 }
 
 template <class T>
 T Node<T>::getData() {
-    return this->data;
+    return data;
 }
 
 template <class T>
@@ -17,5 +17,5 @@ void Node<T>::setNext(Node<T> *nextNode) {
 
 template <class T>
 Node<T> Node<T>::getNext(){
-    return this->next;
+    return next;
 }
