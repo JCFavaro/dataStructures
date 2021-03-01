@@ -156,6 +156,19 @@ Lists/fast:
 	$(MAKE) $(MAKESILENT) -f Lists/CMakeFiles/Lists.dir/build.make Lists/CMakeFiles/Lists.dir/build
 .PHONY : Lists/fast
 
+#=============================================================================
+# Target rules for targets named Stack
+
+# Build rule for target.
+Stack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Stack
+.PHONY : Stack
+
+# fast build rule for target.
+Stack/fast:
+	$(MAKE) $(MAKESILENT) -f Stack/CMakeFiles/Stack.dir/build.make Stack/CMakeFiles/Stack.dir/build
+.PHONY : Stack/fast
+
 Node.o: Node.cpp.o
 
 .PHONY : Node.o
@@ -192,6 +205,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Lists"
+	@echo "... Stack"
 	@echo "... dataStructures"
 	@echo "... Node.o"
 	@echo "... Node.i"

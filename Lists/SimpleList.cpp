@@ -113,5 +113,22 @@ void SimpleList<T>::deleteNode(int pos) {
     aux->setNext(toDelete->getNext());
 
     delete toDelete;
+}
 
+template <class T>
+void SimpleList<T>::clear() {
+    Node<T> *aux = head, *toDelete;
+
+    while(aux != nullptr) {
+        toDelete = aux;
+        aux = aux->getNext();
+        delete toDelete;
+    }
+
+    head = nullptr;
+}
+
+template <class T>
+SimpleList<T>::~SimpleList() {
+    clear();
 }

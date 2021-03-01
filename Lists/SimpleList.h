@@ -26,5 +26,9 @@ public:
 
     void deleteNode(int pos);
 
+    void clear();
+
+    ~SimpleList();
+
 };
 #endif //DATASTRUCTURES_SIMPLELIST_H
