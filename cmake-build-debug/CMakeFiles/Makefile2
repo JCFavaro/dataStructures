@@ -76,12 +76,14 @@ CMAKE_BINARY_DIR = /home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-
 all: CMakeFiles/dataStructures.dir/all
 all: Lists/all
 all: Stack/all
+all: Queue/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: Lists/preinstall
 preinstall: Stack/preinstall
+preinstall: Queue/preinstall
 
 .PHONY : preinstall
 
@@ -89,6 +91,7 @@ preinstall: Stack/preinstall
 clean: CMakeFiles/dataStructures.dir/clean
 clean: Lists/clean
 clean: Stack/clean
+clean: Queue/clean
 
 .PHONY : clean
 
@@ -109,6 +112,24 @@ Lists/preinstall:
 Lists/clean: Lists/CMakeFiles/Lists.dir/clean
 
 .PHONY : Lists/clean
+
+#=============================================================================
+# Directory level rules for directory Queue
+
+# Recursive "all" directory target.
+Queue/all: Queue/CMakeFiles/Queue.dir/all
+
+.PHONY : Queue/all
+
+# Recursive "preinstall" directory target.
+Queue/preinstall:
+
+.PHONY : Queue/preinstall
+
+# Recursive "clean" directory target.
+Queue/clean: Queue/CMakeFiles/Queue.dir/clean
+
+.PHONY : Queue/clean
 
 #=============================================================================
 # Directory level rules for directory Stack
@@ -135,7 +156,7 @@ Stack/clean: Stack/CMakeFiles/Stack.dir/clean
 CMakeFiles/dataStructures.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataStructures.dir/build.make CMakeFiles/dataStructures.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dataStructures.dir/build.make CMakeFiles/dataStructures.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target dataStructures"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target dataStructures"
 .PHONY : CMakeFiles/dataStructures.dir/all
 
 # Build rule for subdir invocation for target.
@@ -189,7 +210,7 @@ Lists/CMakeFiles/Lists.dir/clean:
 Stack/CMakeFiles/Stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f Stack/CMakeFiles/Stack.dir/build.make Stack/CMakeFiles/Stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f Stack/CMakeFiles/Stack.dir/build.make Stack/CMakeFiles/Stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target Stack"
 .PHONY : Stack/CMakeFiles/Stack.dir/all
 
 # Build rule for subdir invocation for target.
@@ -208,6 +229,33 @@ Stack: Stack/CMakeFiles/Stack.dir/rule
 Stack/CMakeFiles/Stack.dir/clean:
 	$(MAKE) $(MAKESILENT) -f Stack/CMakeFiles/Stack.dir/build.make Stack/CMakeFiles/Stack.dir/clean
 .PHONY : Stack/CMakeFiles/Stack.dir/clean
+
+#=============================================================================
+# Target rules for target Queue/CMakeFiles/Queue.dir
+
+# All Build rule for target.
+Queue/CMakeFiles/Queue.dir/all:
+	$(MAKE) $(MAKESILENT) -f Queue/CMakeFiles/Queue.dir/build.make Queue/CMakeFiles/Queue.dir/depend
+	$(MAKE) $(MAKESILENT) -f Queue/CMakeFiles/Queue.dir/build.make Queue/CMakeFiles/Queue.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target Queue"
+.PHONY : Queue/CMakeFiles/Queue.dir/all
+
+# Build rule for subdir invocation for target.
+Queue/CMakeFiles/Queue.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Queue/CMakeFiles/Queue.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/CMakeFiles 0
+.PHONY : Queue/CMakeFiles/Queue.dir/rule
+
+# Convenience name for target.
+Queue: Queue/CMakeFiles/Queue.dir/rule
+
+.PHONY : Queue
+
+# clean rule for target.
+Queue/CMakeFiles/Queue.dir/clean:
+	$(MAKE) $(MAKESILENT) -f Queue/CMakeFiles/Queue.dir/build.make Queue/CMakeFiles/Queue.dir/clean
+.PHONY : Queue/CMakeFiles/Queue.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

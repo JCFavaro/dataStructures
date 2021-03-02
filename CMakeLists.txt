@@ -7,3 +7,4 @@ add_executable(dataStructures Node.h Node.cpp)
 
 add_subdirectory(Lists)
 add_subdirectory(Stack)
+add_subdirectory(Queue)

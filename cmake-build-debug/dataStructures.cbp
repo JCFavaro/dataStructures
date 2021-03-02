@@ -5,7 +5,7 @@
 		<Option title="dataStructures"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\Lists\;CMake Files\Stack\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\Lists\;CMake Files\Stack\;CMake Files\Queue\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug"/>
@@ -169,6 +169,50 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Stack/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Queue">
+				<Option output="/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 Queue"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Queue/fast">
+				<Option output="/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Queue" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 Queue/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/home/jcfavaro/Documents/miGithub/dataStructures/Lists/SimpleList.cpp">
 			<Option target="Lists"/>
@@ -181,6 +225,12 @@
 		</Unit>
 		<Unit filename="/home/jcfavaro/Documents/miGithub/dataStructures/Node.h">
 			<Option target="dataStructures"/>
+		</Unit>
+		<Unit filename="/home/jcfavaro/Documents/miGithub/dataStructures/Queue/Queue.cpp">
+			<Option target="Queue"/>
+		</Unit>
+		<Unit filename="/home/jcfavaro/Documents/miGithub/dataStructures/Queue/Queue.h">
+			<Option target="Queue"/>
 		</Unit>
 		<Unit filename="/home/jcfavaro/Documents/miGithub/dataStructures/Stack/Stack.cpp">
 			<Option target="Stack"/>
@@ -196,6 +246,9 @@
 		</Unit>
 		<Unit filename="/home/jcfavaro/Documents/miGithub/dataStructures/Stack/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\Stack\"/>
+		</Unit>
+		<Unit filename="/home/jcfavaro/Documents/miGithub/dataStructures/Queue/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Queue\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

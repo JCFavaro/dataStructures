@@ -7,3 +7,6 @@
 /home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Stack/CMakeFiles/rebuild_cache.dir
 /home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Stack/CMakeFiles/edit_cache.dir
 /home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Stack/CMakeFiles/Stack.dir
+/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/CMakeFiles/rebuild_cache.dir
+/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/CMakeFiles/edit_cache.dir
+/home/jcfavaro/Documents/miGithub/dataStructures/cmake-build-debug/Queue/CMakeFiles/Queue.dir

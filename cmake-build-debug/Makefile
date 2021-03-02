@@ -169,6 +169,19 @@ Stack/fast:
 	$(MAKE) $(MAKESILENT) -f Stack/CMakeFiles/Stack.dir/build.make Stack/CMakeFiles/Stack.dir/build
 .PHONY : Stack/fast
 
+#=============================================================================
+# Target rules for targets named Queue
+
+# Build rule for target.
+Queue: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Queue
+.PHONY : Queue
+
+# fast build rule for target.
+Queue/fast:
+	$(MAKE) $(MAKESILENT) -f Queue/CMakeFiles/Queue.dir/build.make Queue/CMakeFiles/Queue.dir/build
+.PHONY : Queue/fast
+
 Node.o: Node.cpp.o
 
 .PHONY : Node.o
@@ -205,6 +218,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Lists"
+	@echo "... Queue"
 	@echo "... Stack"
 	@echo "... dataStructures"
 	@echo "... Node.o"
